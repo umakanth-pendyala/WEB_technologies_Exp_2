@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            overflow: auto;
+        }
+
+        .input {
+            margin: auto;
+            overflow: hidden;
+            max-width: 600px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 450px;
+        }
+        main {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input {
+            margin: .2rem 0 .2rem 0;
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+        button {
+            padding: .3rem;
+        }
+        h1 {
+            text-align: center;
+        }
+        .mar-1 {
+            margin: 5px 0 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        
+        <div class="input">
+            <form action="">
+                <h1>Login Form</h1>
+                <input type="text" placeholder="username">
+                <input type="password" placeholder="Enter password">
+                <button type="submit">Submit</button>
+                <button type="reset" class = 'mar-1'>Forget Password</button>
+                <a href="./lab_registration_form_03_02_2021.html" target="right" style="margin: 10px 0 10px 0;">New User! Register Here</a>
+                
+            </form>
+        </div>
+    </main>
+</body>
+</html>

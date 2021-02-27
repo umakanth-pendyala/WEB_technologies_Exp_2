@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #showcase {
+            background: url('./pic_1.jpg') no-repeat center center/cover;
+            height: 90vh;
+            color: #fff;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2:nth-child(1) {
+            letter-spacing: 2rem;
+            font-size: 4rem;
+            font-weight: 50;
+        }
+
+        .img_container {
+            margin: auto;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            
+            overflow: hidden;
+            max-width: 1100px;
+        } 
+
+        .img_container h2 {
+            letter-spacing: normal;
+            font-size: x-large;
+            font-weight: normal;
+        }
+
+        .grid-container {
+            padding: .4rem;
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .img-tile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('./pic_1.jpg') no-repeat center center/cover;
+            height: 450px;
+            border-radius: 5px;
+        }
+        .white-color {
+            color: #fff;
+        }
+
+        #nav_bar {
+            margin: 2rem 0 2rem 0;
+        }
+
+        .nav_container {
+            margin: auto;
+            max-width: 1100px;
+            overflow: hidden;
+        }
+
+        .nav_items ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 1rem;
+            display: inline-block;
+        }
+        a:hover {
+            background-color: black ;
+            color: #fff;
+        }
+
+        nav {
+            height: 4rem;
+            margin: auto;
+            max-width: 1100px;
+            overflow: hidden;
+        }
+
+        .primary_nav_bar {
+            height: 100%;
+            display: flex;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .primary_nav_items ul {
+            display: flex;
+        }
+        ul {
+            list-style: none;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 1.2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="primary_nav_bar">
+            <div class="nav_heading">
+                <h3>GITAM</h3>
+            </div>
+            <div class="primary_nav_items">
+                <ul>
+                    <li><a href="">Student</a></li>
+                    <li><a href="">Professor</a></li>
+                    <li><a href="">Parent</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id = "showcase">
+        <div class="container">
+            <h2>GITAM</h2>
+            <h2>Educating Leaders</h2>
+            <h2>Since 1950</h2>
+        </div>
+    </section>
+    <section id = "image_gallary">
+        <div class="img_container">
+            <h2>Our Image Gallary</h2>
+            <div class="grid-container">
+                <div class="img-tile">
+                    <h1 class = "white-color">Background Image</h1>
+                </div>
+                <div class="img-tile" style="background: url('./pic_2.jpg') no-repeat center center/cover;">
+                    <h1 class = "white-color">Background Image</h1>
+                </div>
+                <div class="img-tile" style="background: url('./pic_4.jpg') no-repeat center center/cover;">
+                    <h1 class = "white-color">Background Image</h1>
+                </div>
+                <div class="img-tile" style="background: url('./pic_3.jpg') no-repeat center center/cover;">
+                    <h1 class = "white-color">Background Image</h1>
+                </div>
+                <div class="img-tile" style="background: url('./pic_5.jpg') no-repeat center center/cover;">
+                    <h1 class = "white-color">Background Image</h1>
+                </div>
+                <div class="img-tile" style="background: url('./pic_6.jpg') no-repeat center center/cover;">
+                    <h1 class = "white-color">Background Image</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id = "nav_bar">
+        <div class="nav_container">
+            <h3>Navigation Bar</h3>
+            <div class="nav_items">
+                <ul>
+                    <li><a href="https://login.gitam.edu/Login.aspx" target="_blank">About Us</a></li>
+                    <li><a href="https://login.gitam.edu/Login.aspx" target="_blank">Contact Us</a></li>
+                    <li><a href="https://login.gitam.edu/Login.aspx" target="_blank">Student Information</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h3>All Rights Reserved <span>&copy;</span> Gitam University Hyderabad</h3>
+    </footer>
+</body>
+</html>
